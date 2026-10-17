@@ -1,0 +1,17 @@
+{
+  "name": "nmn-deformable-terrain-fo4",
+  "version": "1.0.0",
+  "description": "Deformable terrain for Fallout 4 (OG/NG/VR multi-runtime F4SE plugin)",
+  "builtin-baseline": "50c0cb48a0cf2f6fc5c7b2c0d2bafbe26d0a7ca2",
+  "dependencies": [
+    "fmt",
+    "rapidcsv",
+    "rsm-mmio",
+    "spdlog",
+    "xbyak"
+  ],
+  "overrides": [
+    { "name": "fmt", "version": "11.0.2" },
+    { "name": "spdlog", "version": "1.14.1" }
+  ]
+}

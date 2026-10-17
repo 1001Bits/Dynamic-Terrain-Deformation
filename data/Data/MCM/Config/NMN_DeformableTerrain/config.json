@@ -1,0 +1,49 @@
+{
+  "modName": "NMN_DeformableTerrain",
+  "displayName": "Dynamic Terrain Deformation",
+  "minMcmVersion": 1,
+  "content": [
+    {"type": "text", "text": "Footprints, craters and deep snow; changes apply at once."},
+    {"type": "spacer"},
+
+    {"type": "section", "text": "General"},
+    {"id": "bEnableTessellation:General", "type": "switcher", "text": "Deformable terrain", "help": "Off draws the landscape as the game does, without marks.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"type": "spacer"},
+
+    {"type": "section", "text": "Footprints"},
+    {"id": "iSnowTracks:Footprints", "type": "stepper", "text": "Marks in snow", "help": "Separate footprints or continuous tracks in deep snow.", "valueOptions": {"sourceType": "ModSettingInt", "options": ["Footprints", "Tracks"]}},
+    {"id": "fStampDepth:Footprints", "type": "slider", "text": "Footprint depth", "help": "How deep footprints press into soft ground.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 1.0, "max": 16.0, "step": 0.5}},
+    {"id": "bEnableWeather:Footprints", "type": "switcher", "text": "Weather softens the ground", "help": "Rain and snow make marks deeper; clear skies firm the ground.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fFootprintMetres:Footprints", "type": "slider", "text": "Footprint distance (metres)", "help": "How far from you footprints are made and shown.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 5.0, "max": 50.0, "step": 1.0}},
+    {"id": "bIndoorPrints:Footprints", "type": "switcher", "text": "Shoe prints on floors", "help": "Boots carry snow, mud or dust onto floors as fading prints.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fIndoorPrintOpacity:Footprints", "type": "slider", "text": "Shoe print strength", "help": "How strongly shoe prints show on floors.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 0.1, "max": 1.0, "step": 0.05}},
+    {"type": "spacer"},
+
+    {"type": "section", "text": "Snow"},
+    {"id": "bEnableSnowRaise:Snow", "type": "switcher", "text": "Deep snow (when using a snow mod)", "help": "Snow lies as a deep layer you wade through.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fSnowRaiseHeight:Snow", "type": "slider", "text": "Snow depth", "help": "How deep the snow lies.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 10.0, "max": 60.0, "step": 1.0}},
+    {"id": "bSnowCoverLowMeshes:Snow", "type": "switcher", "text": "Snow covers roads and paths", "help": "Roads and paths lie under the snow and take footprints.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fWinterHardGroundDepth:Snow", "type": "slider", "text": "Snow over stone and gravel", "help": "How deep marks go in snow over stone and gravel.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 0.0, "max": 1.0, "step": 0.05}},
+    {"id": "bSnowOnObjects:Snow", "type": "switcher", "text": "Snow on roofs and rock tops", "help": "Roofs, rocks and wrecks get snowy tops, at a small frame cost.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fSnowOnObjectsStrength:Snow", "type": "slider", "text": "Snow on roofs strength", "help": "How white the tops turn.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 0.1, "max": 1.0, "step": 0.05}},
+    {"id": "bSnowSparkle:Snow", "type": "switcher", "text": "Kicked-up snow", "help": "Walking and running through snow throws up small puffs.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fSnowSparkleRate:Snow", "type": "slider", "text": "Kicked-up snow amount", "help": "How much snow your feet throw up.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 100.0, "max": 4000.0, "step": 50.0}},
+    {"id": "fSnowSparkleLife:Snow", "type": "slider", "text": "Kicked-up snow time", "help": "How long kicked-up snow hangs in the air.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 0.3, "max": 4.0, "step": 0.1}},
+    {"type": "spacer"},
+
+    {"type": "section", "text": "Combat and the world"},
+    {"id": "bEnableExplosionImpacts:World", "type": "switcher", "text": "Explosion craters", "help": "Explosions leave craters in soft ground and snow.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "bEnableProjectileImpacts:World", "type": "switcher", "text": "Bullet marks", "help": "Shots leave small marks where they hit the ground.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "bEnableObjectStamps:World", "type": "switcher", "text": "Dropped objects dent the ground", "help": "Dropped items dent soft ground and snow.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "bEnableBloodDecals:World", "type": "switcher", "text": "Blood follows the ground", "help": "Blood follows dents and lies on top of the snow.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fBloodDecalSnowOpacity:World", "type": "slider", "text": "Blood on snow", "help": "Lower values let blood soak into the snow.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 0.2, "max": 1.0, "step": 0.05}},
+    {"id": "bCorpseMarks:World", "type": "switcher", "text": "Bodies press into the ground", "help": "A body lying on soft ground or snow sinks into a hollow.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "bCorpseBurial:World", "type": "switcher", "text": "Snowfall buries bodies", "help": "While it snows, a mound of snow slowly grows over bodies.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fCorpseBurialSeconds:World", "type": "slider", "text": "Time to bury a body (seconds)", "help": "How long snowfall takes to cover a body.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 60.0, "max": 1800.0, "step": 30.0}},
+    {"id": "bHeatMeltsSnow:World", "type": "switcher", "text": "Fires melt snow", "help": "Fires and candles melt the snow around them.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "fHeatRadiusScale:World", "type": "slider", "text": "Melt around fires", "help": "How far around a fire the snow melts.", "valueOptions": {"sourceType": "ModSettingFloat", "min": 1.0, "max": 6.0, "step": 0.25}},
+    {"id": "bEnableScorch:World", "type": "switcher", "text": "Burnt ground", "help": "Fire and heat leave darkened ground that fades over time.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "bEnableThrusterBurn:World", "type": "switcher", "text": "Robot jets burn the ground", "help": "Flying robots like Codsworth burn a line along their path.", "valueOptions": {"sourceType": "ModSettingBool"}},
+    {"id": "bThrusterMeltsSnow:World", "type": "switcher", "text": "Robot jets melt snow", "help": "Their jet melts the snow under them.", "valueOptions": {"sourceType": "ModSettingBool"}}
+  ]
+}

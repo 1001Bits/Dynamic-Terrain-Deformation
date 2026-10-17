@@ -1,0 +1,18 @@
+Deformable Terrain for Fallout 4
+A port of Dynamic_Terrain_Deformation_Skse
+(https://github.com/maglarnet/Dynamic_Terrain_Deformation_Skse).
+Copyright (c) 2026 NearMidnightNow (also published as Maglarnet / NMN).
+Fallout 4 port changes are distributed under the same licence, GPL-3.0-only.
+
+Third-party dependencies remain under their respective licences. This project's
+licence does not replace the licences of those dependencies.
+
+  CommonLibF4       MIT     Ryan-rsm-McKenzie, alandtse and contributors
+  fmt               MIT     Victor Zverovich
+  spdlog            MIT     Gabime
+  xbyak             BSD-3   Herumi
+  rapidcsv          BSD-3   Kristofer Berggren
+  rsm-mmio          MIT     Ryan-rsm-McKenzie
+
+Refer to each dependency's distributed licence and copyright notices for its
+complete terms and attributions.

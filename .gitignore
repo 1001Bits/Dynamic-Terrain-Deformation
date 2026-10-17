@@ -1,0 +1,9 @@
+build/
+external/vcpkg
+*.user
+.vs/
+tools/ingame/.state/
+# Kept out of the published source: documentation, notes and local tools.
+docs/
+*.md
+bridge_mcp_ghidra.py
